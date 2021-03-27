@@ -1,0 +1,292 @@
+html {
+    font-size: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: black;
+    min-height: 100vh;
+    margin: auto;
+}
+
+/* --------HEADER SECTION----------*/
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    height: 130px;
+    background: linear-gradient(270deg, rgb(0, 100, 255), rgb(39, 58, 83));
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 5;
+    box-shadow: 5px 5px 20px black;
+}
+
+#logo {
+    margin-left: 30px;
+    align-self: center;
+}
+
+#logo-img {
+    height: 100px;
+}
+
+#nav-list {
+    list-style: none;
+    text-align: end;
+    margin-right: 50px;
+    margin-bottom: 20px;;
+    justify-self: flex-end;
+}
+
+ul#nav-list li {
+    display: inline;
+    margin: 40px;
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
+@media screen and (max-device-width: 950px) {
+    ul#nav-list li {
+        font-size: 3.5rem;
+        margin: 20px;
+    }
+}
+
+ul#nav-list a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 7px;
+}
+
+ul#nav-list a:hover {
+    background-color: white;
+    border-radius: 3px;
+    color: rgb(0, 100, 255);
+    transition-timing-function: ease-in;
+    transition-duration: .4s;
+}    
+    
+/* --------WELCOME SECTION----------*/    
+    
+
+
+#welcome-section {
+    background-image: url("https://www.tonymarkides.com/images/lukas-blazek-GnvurwJsKaY-unsplash_BW.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /*box-shadow: 5px 5px 20px black;*/
+}
+
+#welcome-message {
+    margin-top: 250px;
+    font-size: 10rem;
+    font-weight: bold;
+    text-align: center;
+    /*text-shadow: 1px 1px 5px rgb(255, 255, 255);*/
+    z-index: 3;
+}
+
+@media screen and (max-device-width: 800px) {
+    #welcome-message {
+        margin-top: 175px;
+    }
+}
+
+@media screen and (max-device-width: 500px) {
+    #welcome-message {
+        font-size: 15rem;
+        margin-top: 250px;
+    }
+}
+
+#welcome-section p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+
+
+@media screen and (max-device-width: 800px) {
+    #welcome-section p {
+    font-size: 3rem;
+    margin: 10px;
+    
+    }
+}
+
+@media screen and (max-device-width: 500px) {
+    #welcome-section p {
+        font-size: 4rem;
+        margin: 200px 20px;
+        
+    }
+}
+
+#photo {
+    
+    border-radius: 50%;
+    height: 125px;
+    /*top: 50px;
+    z-index: 1;
+    right: 150px;*/
+    box-shadow: 5px 5px 20px black;
+    align-self: center;
+}
+
+/* --------PROJECTS SECTION----------*/
+
+#projects {
+    padding: 100px 0 100px 0;
+    background-color: rgb(224, 224, 226);
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    text-align: center;
+}
+
+@media screen and (max-device-width: 500px) {
+    #projects h2 {
+        font-size: 8rem;
+    }
+    #projects p {
+            font-size: 4rem;
+    }
+}
+
+#projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 50px ;
+    width: 90%;
+    max-width: 1200px;
+    margin: 150px auto 0 auto;    
+}
+
+@media screen and (max-device-width: 700px) {
+    #projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 100px ;
+    }
+}
+
+.project-image {
+    object-fit: cover;
+    width: 100%;
+    opacity: 50%;
+}
+
+@media screen and (max-device-width: 800px) {
+    .project-image {
+    opacity: 100%;
+    }
+}
+
+.project-image:hover {
+    opacity: 100%;
+    transition-duration: 0.5s;
+    
+}
+
+.project-tile {
+    background-color: rgb(50, 50, 50);
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 5px 5px 20px black;
+    
+}
+
+.project-title:hover {
+    color:coral;
+    transition-duration: .5s;
+}
+
+#disclaimer {
+    font-size: 2rem;;
+    width: 100%;
+    
+}
+
+/* --------FOOTER SECTION----------*/
+
+footer {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(270deg, rgb(0, 100, 255), rgb(39, 58, 83));
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+@media screen and (max-device-width: 500px) {
+    footer {
+        align-items: center;
+    }
+}
+
+#social-list li {
+    display: inline;
+    text-decoration: none;
+    margin: 20px;
+    
+}
+
+#social-list a {
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+#social-list a:hover {
+    background-color: white;
+    border-radius: 3px;
+    color: rgb(0, 100, 255);
+    transition-timing-function: ease-in;
+    transition-duration: .4s;
+}
+
+@media screen and (max-device-width: 500px) {
+    #social-list a {
+        margin: 10px;
+        padding: 2px;
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-device-width: 500px) {
+    #social-list li {
+        margin: 5px;
+    }
+}
+
+#Copyright {
+    color: white;
+    font-size: 1.5rem;
+    align-self: flex-end;
+    margin-right: 20px;
+}
+
+@media screen and (max-device-width: 500px) {
+    #Copyright {
+        font-size: 3rem;
+        align-self: center;
+    }
+}
