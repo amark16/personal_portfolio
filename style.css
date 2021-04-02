@@ -220,6 +220,66 @@ ul#nav-list a:hover {
     
 }
 
+/* --------ABOUT SECTION----------*/
+#about {
+    /*background-image: url("https://www.tonymarkides.com/images/IMG_0002_web.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    /*box-shadow: 5px 5px 20px black;*/
+}
+
+#about-text {
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+    text-align: justify;
+    margin: 50px 25px 50px 50px;
+}
+
+#about-img {
+    width: 600px;
+    margin: 150px 50px 50px 150px;
+    border-radius: 15px;
+}
+
+#icons-para {
+    text-align: center;
+}
+
+.icons {
+    width: 40px;
+    margin: 20px;
+    
+}
+
+@media screen and (max-device-width: 800px) {
+    #about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    }
+}
+
+@media screen and (max-device-width: 800px) {
+    #about-text {
+    font-size: 2.5rem;
+    width: 90%;    
+    }
+}
+
+@media screen and (max-device-width: 800px) {
+    #about-img {
+    border-radius: 0;
+    max-width: 100%;
+    }
+}
 /* --------FOOTER SECTION----------*/
 
 footer {
